@@ -58,7 +58,8 @@ function App() {
     
   })
 
-  const onSubmit = values => {alert("New Book Created!")}
+  const onSubmit = (values,{ resetForm }) => {alert("New Book Created!"); resetForm();}
+
   return (
     <ChakraProvider>
       <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={validationSchema}>
