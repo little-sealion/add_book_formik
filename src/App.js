@@ -58,7 +58,7 @@ function App() {
     
   })
 
-  const onSubmit = (values,{ resetForm }) => {alert("New Book Created!"); resetForm();}
+  const onSubmit = (values,{ resetForm }) => {alert("New Book Created!"); resetForm({values:initialValues});}
 
   return (
     <ChakraProvider>
